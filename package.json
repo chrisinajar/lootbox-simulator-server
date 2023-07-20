@@ -1,0 +1,38 @@
+{
+  "name": "lootbox-simulator-server",
+  "version": "1.0.0",
+  "description": "A server about gambling on irrelevant things",
+  "main": "index.js",
+  "repository": "https://github.com/chrisinajar/lootbox-simulator-server.git",
+  "author": "Chris Vickery <chrisinajar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.7.5",
+    "@graphql-hive/client": "^0.24.1",
+    "@graphql-tools/merge": "^9.0.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "@graphql-codegen/cli": "4.0.1",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-resolvers": "4.0.1",
+    "@parcel/watcher": "^2.2.0",
+    "@types/cors": "^2.8.13",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node ./index.ts",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
+  }
+}
